@@ -1,0 +1,8 @@
+model/Customer.java
+ model.Customer
+dao/SQLConnection.java
+ dao.SQLConnection
+dao/CustomerDAO.java
+ dao.CustomerDAO
+controller/CustomerServlet.java
+ controller.CustomerServlet
