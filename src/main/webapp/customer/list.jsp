@@ -15,26 +15,27 @@
 <body>
 <center>
     <h1>List customer</h1>
+    <a href="/customers?action=create">Create a customer</a>
 
-<%--    <table BORDER="1">--%>
-<%--        <tr>--%>
-<%--            <th>ID</th>--%>
-<%--            <th>Name</th>--%>
-<%--            <th>Age</th>--%>
-<%--            <th>Address</th>--%>
-<%--        </tr>--%>
-<%--        <c:forEach items="${customers}" var="customer">--%>
-<%--            <tr>--%>
-<%--                <td><c:out value="${customer.getId()}"/></td>--%>
-<%--                <td><c:out value="${customer.getName()}"/></td>--%>
-<%--                <td><c:out value="${customer.getAge()}"/></td>--%>
-<%--                <td><c:out value="${customer.getAddress()}"/></td>--%>
-<%--            </tr>--%>
-<%--        </c:forEach>--%>
-<%--    </table>--%>
-    <c:forEach items="customers" var="cus">
-        <h3>${cus.name} | ${cus.age}</h3>
-    </c:forEach>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
+        </tr>
+        <c:forEach items="${customers}" var="customer">
+            <tr>
+                <td><c:out value="${customer.getId()}"/></td>
+                <td><c:out value="${customer.getName()}"/></td>
+                <td><c:out value="${customer.getAge()}"/></td>
+                <td><c:out value="${customer.getAddress()}"/></td>
+            </tr>
+        </c:forEach>
+    </table>
+<%--    <c:forEach items="${customers}" var="cus">--%>
+<%--        <h3>${cus.name} | ${cus.age}</h3>--%>
+<%--    </c:forEach>--%>
 </center>
 </body>
 </html>
